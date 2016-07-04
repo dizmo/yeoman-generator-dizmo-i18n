@@ -11,7 +11,7 @@ gulp.task('install', function () {
         basedir: '.', entries: ['index.js']
     });
     return browserified.bundle()
-        .pipe(source(pkg.name + '-' + pkg.version + '.min.js'))
+        .pipe(source('i18n' + '-' + pkg.version + '.min.js'))
         .pipe(buffer())
         .pipe(gulp_sourcemaps.init({loadMaps: true}))
         .pipe(gulp_uglify())

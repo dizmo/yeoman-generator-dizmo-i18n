@@ -1,5 +1,5 @@
 {
-  "name": "i18n",
+  "name": "dizmo-i18n",
   "version": "1.0.0",
   "description": "i18next for dizmo",
   "main": "index.js",
@@ -8,8 +8,9 @@
     "test": "exit 0"
   },
   "keywords": [
+    "dizmo",
     "i18next",
-    "dizmo"
+    "i18n"
   ],
   "author": "Hasan Karahan",
   "license": "ISC",
