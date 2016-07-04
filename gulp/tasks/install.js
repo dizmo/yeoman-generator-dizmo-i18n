@@ -8,7 +8,7 @@ var browserify = require('browserify'),
 
 gulp.task('install', function () {
     var browserified = browserify({
-        basedir: '.', entries: ['index.js']
+        basedir: '.', entries: ['index.js'], standalone: 'i18n'
     });
     return browserified.bundle()
         .pipe(source('i18n' + '-' + pkg.version + '.min.js'))
