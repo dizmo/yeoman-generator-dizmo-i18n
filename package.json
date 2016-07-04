@@ -1,31 +1,42 @@
 {
-  "name": "dizmo-i18n",
-  "version": "1.0.1",
-  "description": "i18next for dizmo",
-  "main": "index.js",
-  "scripts": {
-    "install": "node ./node_modules/gulp/bin/gulp.js install",
-    "test": "exit 0"
+  "author": {
+    "email": "hasan.karahan@blackhan.com",
+    "name": "Hasan Karahan",
+    "url": "http://www.blackhan.com/"
   },
-  "keywords": [
-    "dizmo",
-    "i18next",
-    "i18n"
-  ],
-  "author": "Hasan Karahan",
-  "license": "ISC",
   "dependencies": {
     "i18next": "^3.3.1",
     "i18next-xhr-backend": "^0.6.0"
   },
+  "description": "Dizmo internationalization",
   "devDependencies": {
     "browserify": "^13.0.1",
     "gulp": "^3.9.1",
+    "gulp-nsp": "^2.4.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
     "require-all": "^2.0.0",
     "uglify": "^0.1.5",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "homepage": "https://github.com/dizmo/yeoman-generator-dizmo-i18n",
+  "keywords": [
+    "dizmo",
+    "i18next",
+    "i18n"
+  ],
+  "license": "ISC",
+  "name": "generator-dizmo-i18n",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dizmo/yeoman-generator-dizmo-i18n"
+  },
+  "scripts": {
+    "install": "node ./node_modules/gulp/bin/gulp.js install",
+    "prepublish": "gulp prepublish",
+    "test": "exit 0"
+  },
+  "version": "1.0.1"
 }
